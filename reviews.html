@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dinosaurs Restaurant</title>
+	<link rel="SHORTCUT ICON" href="./image/dinosaurs.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="fontawesome-free-5.12.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="app">
+
+		<header class="header">
+			<!-- nav PC -->
+			<nav class="header-nav-pc">
+				
+				<ul class="header-nav-list">
+					<!-- <li class="header-nav-list-logo">
+						<a href="" class="logo">
+							<img src="./image/logo1.png" alt="" class="header-nav-list-logo-image">
+						</a>
+					</li> -->
+					<li class="header-nav-list-item header-nav-list-none">
+						
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="./Main.html" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-home"></i>
+						ГЛАВНАЯ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-utensils"></i>
+						МЕНЮ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-camera-retro"></i>
+						ФОТОГАЛЕРЕЯ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="./reviews.html" class="header-nav-list-item-link"><i class="header-nav-icon far fa-comment-dots"></i>
+						ОТЗЫВЫ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-map-marker-alt"></i>
+						КОНТАКТЫ</a>
+					</li>
+					<li class="header-nav-list-item">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon far fa-question-circle"></i>
+						HELP</a>
+					</li>
+				</ul>
+
+			</nav>
+
+
+			<!-- nav Mobile + Tablet -->
+			<label for="nav-mobile-input" class="nav__bar_btn">
+				<i class="fas fa-bars"></i>
+			</label>
+
+			<input type="checkbox" class="nav__input" id="nav-mobile-input">
+
+			<label for="nav-mobile-input" class="nav__overlay"></label>
+
+			<nav class="header-nav-mobile">
+				
+				<ul class="header-nav-mobile-list">
+					<img src="./image/logo1.png" alt="" class="header-nav-mobile-img">
+
+					<label for="nav-mobile-input" class="nav_mobile-close">
+						<i class="fas fa-times"></i>
+					</label>
+
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-home"></i>
+						Главная</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-utensils"></i>
+						Меню</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-camera-retro"></i>
+						Фотогалерея</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon far fa-comment-dots"></i>
+						Отзыв</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-map-marker-alt"></i>
+						Контакты</a>
+					</li>
+					<li class="header-nav-mobile-list-item">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon far fa-question-circle"></i>
+						Help</a>
+					</li>
+				</ul>
+
+			</nav>
+
+		</header>
+		
+		<a href="./Main.html" class="logo">
+			<img src="./image/logo2.png" alt="" class="header-nav-logo-image">
+		</a>
+		
+		<!-- Header slide picture food -->
+		<div class="header-slide">
+			<img src="./image/image11.jpg" alt="" class="image fade">
+			<img src="./image/image22.jpg" alt="" class="image fade">
+			<img src="./image/image33.jpg" alt="" class="image fade">
+			<img src="./image/image44.jpg" alt="" class="image fade">
+			<img src="./image/image55.jpg" alt="" class="image fade">
+				
+			<div class="header-slide-orientation">
+				<div class="header-slide-orientation-left" onclick="Preview();">
+					<i class="fas fa-chevron-left header-slide-orientation-left-icon"></i>
+				</div>
+				<div class="header-slide-orientation-right" onclick="Next();">
+					<i class="fas fa-chevron-right header-slide-orientation-right-icon"></i>
+				</div>
+			</div>
+		</div>
+		
+
+        <!-- Reviews -->
+			<div class="reviews">
+                <h3 class="text-header" style="margin-top: 100px; transform: none;">Отзывы наших клиентов</h3>	
+				<a href="" class="reviews__header-link">
+				</a>
+
+				<div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Тхань Нгуен Куй</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Были с подругами на выставке и решили пообедать. Мы не ошиблись в выборе. Все вкусно, вежливый персонал, места в ресторане много, на любой вкус. Порции огромные, пришлось с собой забирать. Супчики Фо вкуснейшие. Цены очень демократичные. И, конечно, настоящий въетнамский кофе. Вернемся обязательно и еще не раз!</div>
+					</div>
+				</div>
+
+				<div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Чунг Хо Куанг</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Хороший ресторан. В меру дорогой. Кухня приятная, официанты обходительны. Смело рекомендую.</div>
+					</div>
+                </div>
+                
+                <div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Линь Ка</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Только одно слово: Perfect <i class="fas fa-heart" style="color: red;"></i> </div>
+					</div>
+                </div>
+
+				<div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">София Гусева</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">В основном МЕНЮ блюд пока не много, но достаточно для тех, кто хотел бы познакомиться с высокой вьетнамской кухней. Экзотические блюда (гнезда ласточки, акульи плавники, вьетнамские крабы и др.) можно попробовать только по предзаказу.</div>
+					</div>
+                </div>
+
+                <div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Мария Серёгина</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Праздновали свадьбу в этом ресторане (Царский зал). Все было просто супер. Кухня очень понравилась, так же заказывали блюда не по меню - повара приготовили все на высшем уровне. Сервис и обслуживание прекрасное: персонал приветливый, услужливый и очень вежливый. Выступление музыкантов на традиционных инструментах - супер (это был сюрприз для нас). Зал очень торжественный, я бы сказал даже роскошный, самое главное все новое, свежее и чистенькое.</div>
+					</div>
+                </div>
+            </div>>
+                
+                
+                
+                
+                
+                
+                
+		
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="grid wide footing">
+				<div class="row footing-row">
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">О нас</h3>
+						<div class="footer__proverb">Если вы хотите насладиться вкусной едой, вы обязательно должны прийти в ресторан <span class="fooder-dinosaurs">Dinosaurs</span>.</div>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Контакты</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<i class="far fa-envelope"></i>support@dinosaurs.com
+							</li>
+							<li class="footer-item">
+								<i class="fas fa-phone-alt"></i>+7-(968)-063-99-98
+							</li>
+							<li class="footer-item">
+								<i class="fas fa-home"></i>Россия, Москва, Измайловский проспект, 75А, 105043
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Оплатить</h3>
+						<ul class="footer-list bank">
+							<li class="footer-item">
+								<img src="./image/bank/visa.png" alt="" class="footer-item-bank">
+							</li>
+							<li class="footer-item">
+								<img src="./image/bank/mastercard.png" alt="" class="footer-item-bank">
+							</li>
+							<li class="footer-item">
+								<img src="./image/bank/mir.png" alt="" class="footer-item-bank">
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Подписаться</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="https://www.facebook.com/quythanh.nqt" class="footer-item__link">
+									<img src="./image/social/facebook.png" alt="" class="footer-item-logo">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/thanhnq112/" class="footer-item__link">
+									<img src="./image/social/instagram.png" alt="" class="footer-item-logo">
+									Instagram
+								</a>
+							</li>
+							<li>
+								<a href="https://vk.com/thanhnq112" class="footer-item__link">
+									<img src="./image/social/vk.png" alt="" class="footer-item-logo">
+									Vk
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p class="footer-reserved">Авторское право © 2020 Ресторан Dinosaurs. All rights reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+	
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

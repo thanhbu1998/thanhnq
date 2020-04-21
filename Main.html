@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dinosaurs Restaurant</title>
+	<link rel="SHORTCUT ICON" href="./image/dinosaurs.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="fontawesome-free-5.12.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<style>
+		body {
+			/* background-image: none; */
+		}
+	</style>
+</head>
+<body>
+
+	<div class="app">
+
+		<header class="header">
+			<!-- nav PC -->
+			<nav class="header-nav-pc">
+				
+				<ul class="header-nav-list">
+					<!-- <li class="header-nav-list-logo">
+						<a href="" class="logo">
+							<img src="./image/logo1.png" alt="" class="header-nav-list-logo-image">
+						</a>
+					</li> -->
+					<li class="header-nav-list-item header-nav-list-none">
+						
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="./Main.html" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-home"></i>
+						ГЛАВНАЯ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-utensils"></i>
+						МЕНЮ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-camera-retro"></i>
+						ФОТОГАЛЕРЕЯ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="./reviews.html" class="header-nav-list-item-link"><i class="header-nav-icon far fa-comment-dots"></i>
+						ОТЗЫВЫ</a>
+					</li>
+					<li class="header-nav-list-item header-nav-list-item-separate">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon fas fa-map-marker-alt"></i>
+						КОНТАКТЫ</a>
+					</li>
+					<li class="header-nav-list-item">
+						<a href="" class="header-nav-list-item-link"><i class="header-nav-icon far fa-question-circle"></i>
+						HELP</a>
+					</li>
+				</ul>
+
+			</nav>
+
+
+			<!-- nav Mobile + Tablet -->
+			<label for="nav-mobile-input" class="nav__bar_btn">
+				<i class="fas fa-bars"></i>
+			</label>
+
+			<input type="checkbox" class="nav__input" id="nav-mobile-input">
+
+			<label for="nav-mobile-input" class="nav__overlay"></label>
+
+			<nav class="header-nav-mobile">
+				
+				<ul class="header-nav-mobile-list">
+					<img src="./image/logo1.png" alt="" class="header-nav-mobile-img">
+
+					<label for="nav-mobile-input" class="nav_mobile-close">
+						<i class="fas fa-times"></i>
+					</label>
+
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-home"></i>
+						Главная</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-utensils"></i>
+						Меню</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-camera-retro"></i>
+						Фотогалерея</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon far fa-comment-dots"></i>
+						Отзыв</a>
+					</li>
+					<li class="header-nav-mobile-list-item header-nav-mobile-list-item-separate">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon fas fa-map-marker-alt"></i>
+						Контакты</a>
+					</li>
+					<li class="header-nav-mobile-list-item">
+						<a href="" class="header-nav-mobile-list-item-link"><i class="header-nav-mobile-icon far fa-question-circle"></i>
+						Help</a>
+					</li>
+				</ul>
+
+			</nav>
+
+		</header>
+		
+		<a href="./Main.html" class="logo">
+			<img src="./image/logo2.png" alt="" class="header-nav-logo-image">
+		</a>
+		
+		<!-- Header slide picture food -->
+		<div class="header-slide">
+			<img src="./image/image11.jpg" alt="" class="image fade">
+			<img src="./image/image22.jpg" alt="" class="image fade">
+			<img src="./image/image33.jpg" alt="" class="image fade">
+			<img src="./image/image44.jpg" alt="" class="image fade">
+			<img src="./image/image55.jpg" alt="" class="image fade">
+				
+			<div class="header-slide-orientation">
+				<div class="header-slide-orientation-left" onclick="Preview();">
+					<i class="fas fa-chevron-left header-slide-orientation-left-icon"></i>
+				</div>
+				<div class="header-slide-orientation-right" onclick="Next();">
+					<i class="fas fa-chevron-right header-slide-orientation-right-icon"></i>
+				</div>
+			</div>
+		</div>
+		
+
+
+		
+		<div class="contain">
+
+			<!-- Menu food -->
+			<div class="menu">
+				<a href="">
+					<img src="./image/menu.png" alt="" class="menu-image">
+				</a>
+				<p>Давайте готовить как, мы готовим к любимому больше всего!</p>
+			</div>
+			
+			<div class="grid wide container">
+				<div class="row menu-food">
+
+					<div class="col l-3 m-6 c-12">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/1-bunrieucua.png);"></div>
+							<h4 class="food-name">Бун Риеу Куа</h4>
+							<div class="food-price">
+								<span class="food-price-num">400 руб</span>
+								<span class="food-price-amount">/1000 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/2-bunca.png);"></div>
+							<h4 class="food-name">Бун Ка</h4>
+							<div class="food-price">
+								<span class="food-price-num">400 руб</span>
+								<span class="food-price-amount">/1000 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/3-chaolong.png);"></div>
+							<h4 class="food-name">Чао Лонг</h4>
+							<div class="food-price">
+								<span class="food-price-num">450 руб</span>
+								<span class="food-price-amount">/200 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/4-banhmi.png);"></div>
+							<h4 class="food-name">Бань Ми</h4>
+							<div class="food-price">
+								<span class="food-price-num">200 руб</span>
+								<span class="food-price-amount">/штук</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-0">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/5-buncha.png);"></div>
+							<h4 class="food-name">Бун Ча</h4>
+							<div class="food-price">
+								<span class="food-price-num">380 руб</span>
+								<span class="food-price-amount">/450 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-0">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/6-vitnuong.png);"></div>
+							<h4 class="food-name">Утки-гриль</h4>
+							<div class="food-price">
+								<span class="food-price-num">1800 руб</span>
+								<span class="food-price-amount">/утка</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-0">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/7-bundau.png);"></div>
+							<h4 class="food-name">Бун Дау</h4>
+							<div class="food-price">
+								<span class="food-price-num">1000 руб</span>
+								<span class="food-price-amount">/1000 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col l-3 m-6 c-0">
+						<a class="food-item" href="#">
+							<div class="food-img" style="background-image: url(./image/8-nemcuon.png);"></div>
+							<h4 class="food-name">Нем Куон</h4>
+							<div class="food-price">
+								<span class="food-price-num">120 руб</span>
+								<span class="food-price-amount">/85 г</span>
+							</div>
+							<div class="food-end">
+								<div class="rating">
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="rating-star--gold fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<button class="food-add--btn">В корзину</button>
+							</div>
+							<div class="food-bestseller">
+								<span class="food-bestseller--hit">ХИТ</span>
+								<span class="food-bestseller--sale">продаж</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- Form reserve -->
+			<div class="form-reserve-box">
+				<div class="form-reserve">
+					<h3 class="form-reserve__heading text-header" style="transform: none;">Зарезервировать столик</h3>
+	
+					<div class="form-reverse__main">
+						<div class="grid form">
+							<div class="row">
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Фамилия">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Имя">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Отчество">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Телефон">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Ваша почта">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Выберите дату">
+									</div>
+								</div>
+
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<!-- <select name="" id="" class="form-reverse__select">
+											<option value="" disabled selected  class="form-reverse__input-placeholder">Время</option>
+											<option class="select-option" value="10:00">10:00</option>
+											<option class="select-option" value="10:30">10:30</option>
+											<option class="select-option" value="11:00">11:00</option>
+											<option class="select-option" value="11:30">11:30</option>
+											<option class="select-option" value="12:00">12:00</option>
+											<option class="select-option" value="12:30">12:30</option>
+											<option class="select-option" value="13:00">13:00</option>
+											<option class="select-option" value="13:30">13:30</option>
+											<option class="select-option" value="14:00">14:00</option>
+											<option class="select-option" value="14:30">14:30</option>
+											<option class="select-option" value="15:00">15:00</option>
+											<option class="select-option" value="15:30">15:30</option>
+											<option class="select-option" value="16:00">16:00</option>
+											<option class="select-option" value="16:30">16:30</option>
+											<option class="select-option" value="17:00">17:00</option>
+											<option class="select-option" value="17:30">17:30</option>
+											<option class="select-option" value="18:00">18:00</option>
+											<option class="select-option" value="18:30">18:30</option>
+											<option class="select-option" value="19:00">19:00</option>
+											<option class="select-option" value="19:30">19:30</option>
+											<option class="select-option" value="20:00">20:00</option>
+											<option class="select-option" value="20:30">20:30</option>
+											<option class="select-option" value="21:00">21:00</option>
+											<option class="select-option" value="21:30">21:30</option>
+										</select> -->
+										<input type="text" class="form-reverse__input" placeholder="Время">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Nguoi lon">
+									</div>
+								</div>
+	
+								<div class="col l-4 m-4 c-12">
+									<div class="form-reverse__group">
+										<input type="text" class="form-reverse__input" placeholder="Tre em">
+									</div>
+								</div>
+								
+	
+								
+							</div>
+						</div>
+	
+						<button class="form-reserve__btn">Зарезервировать</button>
+						<div class="form-reserver__aside">
+							<p class="form-reserve__call">
+								Или позвоните: <span class="form-reserve__call-tel">+7-(968)-063-99-98</span> для бронирования и консультации.
+							</p>
+							<p class="form-reserver__policy-text">
+								Заполняя данную форму, Вы принимаете условия Соглашения об использовании сайта, в том числе в части
+								<a href="" class="form-reserve__policy-link">обработки и использования</a>
+								персональных данных.
+							</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+
+
+			<!-- Reviews -->
+			<div class="reviews">
+				<a href="./reviews.html" class="reviews__header-link">
+					<h3 class="text-header">Отзывы клиентов</h3>	
+				</a>
+
+				<div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Тхань Нгуен Куй</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Были с подругами на выставке и решили пообедать. Мы не ошиблись в выборе. Все вкусно, вежливый персонал, места в ресторане много, на любой вкус. Порции огромные, пришлось с собой забирать. Супчики Фо вкуснейшие. Цены очень демократичные. И, конечно, настоящий въетнамский кофе. Вернемся обязательно и еще не раз!</div>
+					</div>
+				</div>
+
+				<div class="reviews__box">
+					<div class="reviews__client">
+						<div class="reviews__client-info">
+							<h4 class="reviews__client-info--name">Чунг Хо Куанг</h4>
+							<div class="rating reviews-rating">
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+								<i class="rating-star--gold fas fa-star"></i>
+							</div>
+						</div>
+						<div class="reviews__client-text">Хороший ресторан. В меру дорогой. Кухня приятная, официанты обходительны. Смело рекомендую.</div>
+					</div>
+                </div>
+			</div>
+
+		</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="grid wide footing">
+				<div class="row footing-row">
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">О нас</h3>
+						<div class="footer__proverb">Вы хотите насладиться вкусной едой, вы любите вьетнамских людей, вы любите вьетнамскую культуру, вы обязательно должны прийти в ресторан <span class="fooder-dinosaurs">Dinosaurs</span>.</div>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Контакты</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<i class="far fa-envelope"></i>support@dinosaurs.com
+							</li>
+							<li class="footer-item">
+								<i class="fas fa-phone-alt"></i>+7-(968)-063-99-98
+							</li>
+							<li class="footer-item">
+								<i class="fas fa-home"></i>Россия, Москва, Измайловский проспект, 75А, 105043
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Оплатить</h3>
+						<ul class="footer-list bank">
+							<li class="footer-item">
+								<img src="./image/bank/visa.png" alt="" class="footer-item-bank">
+							</li>
+							<li class="footer-item">
+								<img src="./image/bank/mastercard.png" alt="" class="footer-item-bank">
+							</li>
+							<li class="footer-item">
+								<img src="./image/bank/mir.png" alt="" class="footer-item-bank">
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-3 m-6 c-12">
+						<h3 class="footer__heading">Подписаться</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="https://www.facebook.com/quythanh.nqt" class="footer-item__link">
+									<img src="./image/social/facebook.png" alt="" class="footer-item-logo">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/thanhnq112/" class="footer-item__link">
+									<img src="./image/social/instagram.png" alt="" class="footer-item-logo">
+									Instagram
+								</a>
+							</li>
+							<li>
+								<a href="https://vk.com/thanhnq112" class="footer-item__link">
+									<img src="./image/social/vk.png" alt="" class="footer-item-logo">
+									Vk
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p class="footer-reserved">Авторское право © 2020 Ресторан Dinosaurs. All rights reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+	
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
